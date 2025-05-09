@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Pitcher figure -->
+  <circle cx="256" cy="150" r="40" fill="#ffbe0b" stroke="#1a535c" stroke-width="3"/>
+  <line x1="256" y1="190" x2="256" y2="320" stroke="#1a535c" stroke-width="8"/>
+  <line x1="256" y1="220" x2="190" y2="270" stroke="#1a535c" stroke-width="8"/>
+  <line x1="256" y1="220" x2="322" y2="270" stroke="#1a535c" stroke-width="8"/>
+  <line x1="256" y1="320" x2="210" y2="400" stroke="#1a535c" stroke-width="8"/>
+  <line x1="256" y1="320" x2="302" y2="400" stroke="#1a535c" stroke-width="8"/>
+  
+  <!-- Ball in hand -->
+  <circle cx="190" cy="270" r="25" fill="#ff6b6b" stroke="#1a535c" stroke-width="3"/>
+  
+  <!-- Ground line -->
+  <line x1="50" y1="400" x2="462" y2="400" stroke="#1a535c" stroke-width="4"/>
+  
+  <!-- Labels -->
+  <text x="256" y="470" font-size="20" text-anchor="middle" fill="#1a535c" font-weight="bold">Roll the ball, don't bounce it</text>
+</svg>

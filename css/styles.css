@@ -1,0 +1,338 @@
+/* Base styles */
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --accent-color: #ffbe0b;
+    --dark-color: #1a535c;
+    --light-color: #f7fff7;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader img {
+    width: 100px;
+    height: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    color: var(--dark-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+}
+
+header h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--dark-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--light-color);
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--light-color);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Card styles */
+.card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s, opacity 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Section styles */
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+section h3 {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Rules styling */
+.rules-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.rules-container:hover {
+    background-color: #f0f0f0;
+}
+
+.rule-icon {
+    flex: 0 0 50px;
+    margin-right: 1rem;
+}
+
+.rule-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.rule-text {
+    flex: 1;
+}
+
+.rule-text p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Illustrations */
+.pitch-illustration,
+.base-illustration,
+.pitcher-illustration,
+.catch-illustration,
+.out-illustration {
+    margin: 2rem auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.pitch-illustration img,
+.base-illustration img,
+.pitcher-illustration img,
+.catch-illustration img,
+.out-illustration img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 99;
+}
+
+#back-to-top:hover {
+    background-color: var(--dark-color);
+    transform: scale(1.1);
+}
+
+#back-to-top.visible {
+    display: block;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        width: 100%;
+    }
+    
+    nav ul li a {
+        text-align: center;
+    }
+    
+    .rules-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .rule-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

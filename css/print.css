@@ -1,0 +1,75 @@
+/* Print stylesheet for Terrible Kickball rules */
+@media print {
+    /* General adjustments */
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        background: #fff;
+        color: #000;
+    }
+    
+    /* Hide elements not needed for printing */
+    .loader,
+    nav,
+    #back-to-top,
+    footer {
+        display: none !important;
+    }
+    
+    /* Reset all colors and shadows */
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    /* Preserve header styling but with print-friendly colors */
+    header {
+        padding: 1cm 0;
+        border-bottom: 1pt solid #000;
+        margin-bottom: 1cm;
+    }
+    
+    header h1 {
+        font-size: 24pt;
+    }
+    
+    /* No hover effects in print */
+    .card:hover {
+        transform: none;
+    }
+    
+    /* Avoid page breaks inside rules sections */
+    .card {
+        page-break-inside: avoid;
+        margin: 1cm 0;
+        padding: 0.5cm;
+        border: 1pt solid #ccc;
+    }
+    
+    /* Ensure each section starts on a new page */
+    section {
+        page-break-before: always;
+    }
+    
+    section:first-of-type {
+        page-break-before: avoid;
+    }
+    
+    /* Make sure all images print nicely */
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+    
+    /* URLs after links */
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    
+    /* Add page numbers */
+    @page {
+        margin: 2cm;
+    }
+}

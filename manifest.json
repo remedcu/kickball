@@ -1,0 +1,16 @@
+{
+  "name": "Terrible Kickball Rules",
+  "short_name": "Kickball Rules",
+  "description": "Official rules for Terrible Kickball by the Lousy and Lazy Sports Club",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7fff7",
+  "theme_color": "#ff6b6b",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

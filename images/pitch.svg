@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Kickball field -->
+  <rect x="50" y="50" width="412" height="412" fill="#4ecdc4" stroke="#1a535c" stroke-width="5"/>
+  
+  <!-- Home plate and bases -->
+  <rect x="231" y="412" width="50" height="50" fill="#ff6b6b" stroke="#1a535c" stroke-width="3"/>
+  <text x="256" y="445" font-size="20" text-anchor="middle" fill="#1a535c" font-weight="bold">Home</text>
+  
+  <rect x="50" y="231" width="50" height="50" fill="white" stroke="#1a535c" stroke-width="3"/>
+  <text x="75" y="264" font-size="15" text-anchor="middle" fill="#1a535c" font-weight="bold">3rd</text>
+  
+  <rect x="231" y="50" width="50" height="50" fill="white" stroke="#1a535c" stroke-width="3"/>
+  <text x="256" y="83" font-size="15" text-anchor="middle" fill="#1a535c" font-weight="bold">2nd</text>
+  
+  <rect x="412" y="231" width="50" height="50" fill="white" stroke="#1a535c" stroke-width="3"/>
+  <text x="437" y="264" font-size="15" text-anchor="middle" fill="#1a535c" font-weight="bold">1st</text>
+  
+  <!-- Foul lines - adjusted to stop at bases -->
+  <line x1="256" y1="437" x2="100" y2="281" stroke="#ffffff" stroke-width="3" stroke-dasharray="10,5"/>
+  <line x1="256" y1="437" x2="412" y2="281" stroke="#ffffff" stroke-width="3" stroke-dasharray="10,5"/>
+  
+  <!-- Pitcher's mound -->
+  <circle cx="256" cy="256" r="25" fill="#ffbe0b" stroke="#1a535c" stroke-width="3"/>
+  <text x="256" y="262" font-size="15" text-anchor="middle" fill="#1a535c" font-weight="bold">P</text>
+  
+  <!-- Kick zone area - changed to arc -->
+  <path d="M186,412 A70,70 0 0,1 326,412" fill="none" stroke="#ff6b6b" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="256" y="350" font-size="15" text-anchor="middle" fill="#1a535c" font-weight="bold">Kick Zone</text>
+  
+  <!-- Kickball -->
+  <circle cx="350" cy="400" r="20" fill="#ff6b6b" stroke="#1a535c" stroke-width="2"/>
+  <path d="M335,390 Q 350,385 365,390" fill="none" stroke="#1a535c" stroke-width="2"/>
+  <path d="M335,410 Q 350,415 365,410" fill="none" stroke="#1a535c" stroke-width="2"/>
+  <path d="M340,385 Q 345,400 340,415" fill="none" stroke="#1a535c" stroke-width="2"/>
+  <path d="M360,385 Q 355,400 360,415" fill="none" stroke="#1a535c" stroke-width="2"/>
+</svg>
