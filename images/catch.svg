@@ -8,7 +8,7 @@
   <line x1="200" y1="320" x2="230" y2="400" stroke="#1a535c" stroke-width="8"/>
   
   <!-- Ball being caught -->
-  <circle cx="170" cy="240" r="25" fill="#ff6b6b" stroke="#1a535c" stroke-width="3"/>
+  <circle cx="150" cy="240" r="25" fill="#ff6b6b" stroke="#1a535c" stroke-width="3"/>
   
   <!-- Kicker running -->
   <circle cx="350" cy="200" r="35" fill="#ffbe0b" stroke="#1a535c" stroke-width="3"/>
